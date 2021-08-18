@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+   int a[5] = {0,1,4,3,2};
+   int i,j,n,t;
+   int *p;
+   p=a;
+
+   for (i=0; i<4; i++){
+       
+      for (j=i+1; j<5; j++){
+          
+         if (*(p+i) > *(p+j)){
+             
+             t      = *(p+i);
+            *(p+i)  = *(p+j);
+            *(p+j)  = t;
+            
+         }
+      }
+   }
+
+    printf("Array sorted in Ascending Order : ");
+    for(int z = 0 ;z <5;z++){
+        printf("%d ",a[z]);
+    }
+   return 0;
+}
