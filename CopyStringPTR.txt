@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+  
+    int i = 0;
+    char str[50];
+    char new_str[50];
+    gets(str);
+    printf("%d\n",strlen(str));
+    
+    char *p;
+    p=str;
+    
+    while(*(p+i)!='\0'){
+        new_str[i] = *(p+i);
+        printf("%c ",new_str[i]);
+        i++;
+    }
+    
+    
+    printf("Length of new string : %d\n",strlen(new_str));
+    for (int j = 0 ;j<strlen(new_str);j++){
+        printf("%c ",new_str[j]);
+    }
+    
+    return 0;
+}
