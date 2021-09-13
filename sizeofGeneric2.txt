@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    double d;
+    printf("%u ",&d);
+    int c = &d;
+    int e = &d+1;
+    
+    printf("%u ",&d+1);
+    printf("\n %d %d %d",c,e,e-c);
+
+    return 0;
+}
